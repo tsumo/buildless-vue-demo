@@ -1,0 +1,134 @@
+/* ============ */
+/* round-button */
+/* ============ */
+.round-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 4px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.round-button:hover {
+    background-color: rgba(33, 150, 243, 0.12);
+}
+
+.round-button i {
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    margin: 8px;
+    color: rgb(33, 150, 243);
+}
+
+
+/* ======= */
+/* doc-row */
+/* ======= */
+.doc-list {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+}
+
+
+/* ======= */
+/* doc-row */
+/* ======= */
+.doc-header {
+    background-color: rgb(33, 150, 243);
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+    padding: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* ======= */
+/* doc-row */
+/* ======= */
+.doc-row {
+    display: flex;
+    direction: row;
+    padding: 16px 0;
+}
+
+
+/* ============ */
+/* doc-row-text */
+/* ============ */
+.doc-row-text {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    vertical-align: middle;
+}
+
+.doc-row-text-icon {
+    padding: 0 16px;
+    font-size: 36px;
+    width: 36px;
+}
+
+.doc-row-text-icon-blue {
+    color: rgb(33, 150, 243);
+}
+
+.doc-row-text-icon-green {
+    color: green;
+}
+
+.doc-row-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.3;
+    width: 86%;
+}
+
+.doc-row-text-name {
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(0, 0, 0, 0.54);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.doc-row-text-info {
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(0, 0, 0, 0.38);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    font-size: 14px;
+}
+
+
+/* =============== */
+/* doc-row-buttons */
+/* =============== */
+.doc-row-buttons-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.doc-row-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+

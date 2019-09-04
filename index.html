@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue JS component demo</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="components.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+
+    <div id="app-root">
+        <doc-list>
+            <doc-header title="Document list">asd</doc-header>
+            <doc-row>
+                <doc-row-text icon="check_circles" color="blue" name="Document name 3" info="Document 3 info"></doc-row-text>
+                <doc-row-buttons>
+                    <round-button title="Email" icon="email" :id="3" @button-clicked="mailClick"></round-button>
+                    <round-button title="Sign" icon="create" :id="3" @button-clicked="signClick"></round-button>
+                    <round-button title="Verify" icon="info" :id="3" @button-clicked="verifyClick"></round-button>
+                    <round-button title="Download" icon="save_alt" :id="3" @button-clicked="downloadClick"></round-button>
+                    <round-button title="Protocol" icon="description" :id="3" @button-clicked="protocolClick"></round-button>
+                    <round-button title="Share" icon="share" :id="3" @button-clicked="shareClick"></round-button>
+                    <round-button title="Delete" icon="delete" :id="3" @button-clicked="deleteClick"></round-button>
+                </doc-row-buttons>
+            </doc-row>
+            <doc-row>
+                <doc-row-text icon="insert_drive_file" color="green" name="Document name 4" info="Document 4 info"></doc-row-text>
+                <doc-row-buttons>
+                    <round-button title="Email" icon="email" :id="4" @button-clicked="mailClick"></round-button>
+                    <round-button title="Sign" icon="create" :id="4" @button-clicked="signClick"></round-button>
+                    <round-button title="Verify" icon="info" :id="4" @button-clicked="verifyClick"></round-button>
+                    <round-button title="Download" icon="save_alt" :id="4" @button-clicked="downloadClick"></round-button>
+                    <round-button title="Protocol" icon="description" :id="4" @button-clicked="protocolClick"></round-button>
+                    <round-button title="Share" icon="share" :id="4" @button-clicked="shareClick"></round-button>
+                    <round-button title="Delete" icon="delete" :id="4" @button-clicked="deleteClick"></round-button>
+                </doc-row-buttons>
+            </doc-row>
+        </doc-list>
+    </div>
+
+    <script>
+    new Vue({
+        el: '#app-root',
+        methods: {
+            mailClick: function(id) {
+                alert('Emailing document ' + id);
+            },
+            signClick: function(id) {
+                alert('Signing document ' + id);
+            },
+            downloadClick: function(id) {
+                alert('Downloading document ' + id);
+            },
+            verifyClick: function(id) {
+                alert('Verifying document ' + id);
+            },
+            protocolClick: function(id) {
+                alert('Protocol of the document ' + id);
+            },
+            shareClick: function(id) {
+                alert('Sharing document ' + id);
+            },
+            deleteClick: function(id) {
+                alert('Deleting document ' + id);
+            }
+        }
+    })
+    </script>
+
+</body>
+
+</html>
+
